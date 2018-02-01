@@ -1,0 +1,30 @@
+{
+  "name": "aurora-api",
+  "version": "1.0.0",
+  "description": "Provide an structured data API on top of NOAA's Aurora Forecast",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "./build.sh",
+    "package": "aws cloudformation package --template-file template.yml --output-template-file packaged-template.yml --s3-bucket $CODE_BUCKET",
+    "deploy": "aws cloudformation deploy --template-file packaged-template.yml --capabilities CAPABILITY_IAM --stack-name dev-aurora-api-$USER"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evanchiu/aurora-api.git"
+  },
+  "keywords": [
+    "API",
+    "Aurora",
+    "Forecast",
+    "NOAA"
+  ],
+  "author": "Evan Chiu <evan@evanchiu.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/evanchiu/aurora-api/issues"
+  },
+  "homepage": "https://github.com/evanchiu/aurora-api#readme",
+  "dependencies": {
+    "request": "^2.83.0"
+  }
+}

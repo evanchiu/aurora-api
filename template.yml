@@ -1,0 +1,23 @@
+AWSTemplateFormatVersion: 2010-09-09
+Transform: AWS::Serverless-2016-10-31
+Description: Provide an structured data API on top of NOAA's Aurora Forecast
+Resources:
+  api:
+    Type: AWS::Serverless::Function
+    Properties:
+      Description: Provide an structured data API on top of NOAA's Aurora Forecast
+      Handler: src/index.handler
+      Runtime: nodejs6.10
+      CodeUri: build/aurora.zip
+      Timeout: 60
+      Events:
+        root:
+          Type: Api
+          Properties:
+            Path: /
+            Method: get
+        getProxy:
+          Type: Api
+          Properties:
+            Path: '/{proxy+}'
+            Method: get
