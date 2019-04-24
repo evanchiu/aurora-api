@@ -49,4 +49,4 @@ Prerequisites: [Node.js](https://nodejs.org/en/) and [AWS CLI](http://docs.aws.a
 * [UAF Aurora Forecast](http://www.gi.alaska.edu/AuroraForecast/NorthAmerica/20180101)
 
 ## License
-&copy; 2017-2018 [Evan Chiu](https://evanchiu.com). This project is available under the terms of the MIT license.
+&copy; 2018-2019 [Evan Chiu](https://evanchiu.com). This project is available under the terms of the MIT license.

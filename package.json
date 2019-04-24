@@ -1,6 +1,6 @@
 {
   "name": "aurora-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Provide an structured data API on top of NOAA's Aurora Forecast",
   "main": "src/index.js",
   "scripts": {
