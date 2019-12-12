@@ -1,6 +1,6 @@
 {
   "name": "aurora-api",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Provide an structured data API on top of NOAA's Aurora Forecast",
   "main": "src/index.js",
   "scripts": {
@@ -25,6 +25,6 @@
   },
   "homepage": "https://github.com/evanchiu/aurora-api#readme",
   "dependencies": {
-    "request": "^2.83.0"
+    "request": "^2.88.0"
   }
 }
