@@ -8,8 +8,9 @@ mkdir -p $build
 tmp=$(mktemp -d)
 cp -r src $tmp
 cp package.json $tmp
+cp yarn.lock $tmp
 pushd $tmp
-npm install --production
+yarn install --production
 
 # Zip contents
 zip -r $build/aurora.zip .

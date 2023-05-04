@@ -7,7 +7,7 @@ Resources:
     Properties:
       Description: Provide an structured data API on top of NOAA's Aurora Forecast
       Handler: src/index.handler
-      Runtime: nodejs12.x
+      Runtime: nodejs18.x
       CodeUri: build/aurora.zip
       Timeout: 10
       Events:
