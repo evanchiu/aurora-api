@@ -25,6 +25,6 @@
   },
   "homepage": "https://github.com/evanchiu/aurora-api#readme",
   "dependencies": {
-    "axios": "^1.4.0"
+    "axios": "^1.6.0"
   }
 }
